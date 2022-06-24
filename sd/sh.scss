@@ -1,34 +1,180 @@
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style:none;
+    font-size: 62.5%;
+}
+body{
+
+    
+   
+}
+.header{
+    padding:1.6rem 0;
+}
 .container{
-    width:50%;
-    height: 500px;
+
+    height: auto;
     margin:0 auto;
-    border:1px solid #000;
+
+
+
+
     display: grid;
-    padding:5%;
-    grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, minmax(100px, auto));
-    justify-items: center;
-    .item{
+  
+    .header{
+        display: grid;
+
+        grid-template-columns: 40rem 3fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+
         
-        width: 30%;
-        &1{
-            border:1px solid aqua;
+        .logo{
+            
+            display: flex;
+            background: url("https://www.pglpipelines.co.uk/wp-content/uploads/pgl-pipelines-logo.png") center no-repeat;
+            background-size: contain;
+            align-items: center;
+            background-color: #fff;
+            margin: 2% 5%;
+            
         }
-        &2{
-            border:1px solid red;
+        .menu{
+      
+            text-align: center;
+            background-color: #267b98;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                
+                li{
+                    display: inline-block;
+                    font-size:1.3rem;
+                    color:#fff;
+                    padding:0 1rem;
+                }
+            }
+        
         }
-        &3{
-            border:1px solid rgb(44, 128, 128);
+
+        
+        .contact{
+            border:1px solid rgb(44, 128, 128);        
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+          
+            p{
+                color:#fff;
+                font-size: 1.5em;
+                font-family: 'Helvetica Neue LT W05_57 Cond',sans-serif;
+                text-transform: uppercase;
+                margin-right: 10px;
+            }
         }
-        &4{
-            border:1px solid rgb(161, 192, 120);
+       
+    }
+
+    .slide{
+        
+        gap: calc(20px + 10%);
+        background: url('/sd/img/pgl-pipelines-data-collection.jpg') center no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 610px;
+        position: relative;
+    
+     
+        .text{
+            position: absolute;
+            left: 100px;
+            bottom: 20%;
+            text-align: right;
+            h1{
+                display: block;
+                font-family: 'Helvetica Neue LT W05_57 Cond',sans-serif;
+                color: #000;
+                
+                background-color: #fff;
+                padding: 20px 25px;
+                text-transform: uppercase;
+                margin: 0;
+                font-size: 1.8rem;
+            }
+            h2{
+                
+                display: inline-block;
+                font-family: 'Helvetica Neue LT W05_57 Cond',sans-serif;
+                background-color: rgba(38, 123, 152, 0.8);
+                color: #fff;
+                font-size: 1.5em;
+                margin: 0;
+                padding: 20px 25px;
+                text-align: right;
+                
+               
+            }
+        }
+        
+
+    }
+
+
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        padding-top:1.6rem;
+        .twitter{
+            padding:10%;
+            color:#fff;
+            background-color: #1ca1f2;
+            font-size:3rem;
+            ul{
+                li{
+                font-size: 2rem;
+                border-bottom: .1rem solid #fff;
+                }
+            }
+        }
+
+        .company{
+            background: #292929 url("https://www.pglpipelines.co.uk/wp-content/uploads/pgl-jcb.png") right no-repeat;
+            background-size: contain;
+            padding: 10%;
+            /* box-sizing: content-box; */
+            color: #fff;
+            border-left: 1.6rem solid #fff;
+            .title{
+                color:#fff;
+                font-size:3rem;
+                h2{
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        background-color:#fff;
+                        left: 0;
+                        bottom:-1rem;
+                        width:5rem;
+                        height: 0.2rem;
+                    }
+                }
+
+                
+            }
+
+            p{
+                padding-top:3rem;
+            }
         }
     }
 
-    .btn{
-        flex:1;
-       
-    }
 
 
 }
