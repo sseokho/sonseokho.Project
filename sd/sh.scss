@@ -83,13 +83,33 @@ body{
     .slide{
         
         gap: calc(20px + 10%);
-        background: url('/sd/img/pgl-pipelines-data-collection.jpg') center no-repeat;
         background-size: cover;
         width: 100%;
         height: 610px;
         position: relative;
     
-     
+        .slide1{
+            background-image: url("https://tech.hyundaimotorgroup.com/wp-content/uploads/2021/11/full.jpeg");
+        }
+
+        .slide2{
+            background-image: url("https://tech.hyundaimotorgroup.com/wp-content/uploads/2020/12/main_cover_2_c.jpg");
+        }
+
+        .slide3{
+            background-image: url("https://tech.hyundaimotorgroup.com/wp-content/uploads/2020/12/main_cover_3_c.jpg");
+        }
+
+        .slide4{
+            background-image: url("https://tech.hyundaimotorgroup.com/wp-content/uploads/2020/12/main_cover_4_c.jpg");
+        }
+
+        .slide5{
+            background-image: url("https://tech.hyundaimotorgroup.com/wp-content/uploads/2020/12/main_cover_5_c.jpg");
+        }
+        .slide6{
+            background-image: url("https://tech.hyundaimotorgroup.com/wp-content/uploads/2020/12/main_cover_6.jpg");
+        }
         .text{
             position: absolute;
             left: 100px;
